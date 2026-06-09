@@ -200,12 +200,6 @@ function App() {
               </button>
               <button 
                 type="button" 
-                className={type === 'alquiler' ? 'active' : ''} 
-                onClick={() => setType('alquiler')}>
-                🛶 Alquiler (20%)
-              </button>
-              <button 
-                type="button" 
                 className={type === 'pago' ? 'active' : ''} 
                 onClick={() => setType('pago')}>
                 💸 Ajuste/Pago
@@ -213,25 +207,7 @@ function App() {
             </div>
           </div>
 
-          {type === 'alquiler' && (
-            <div>
-              <label>Subtipo de Alquiler</label>
-              <div className="segmented-control">
-                <button 
-                  type="button" 
-                  className={rentalType === 'kayak' ? 'active' : ''} 
-                  onClick={() => setRentalType('kayak')}>
-                  🛶 Kayak
-                </button>
-                <button 
-                  type="button" 
-                  className={rentalType === 'paddle' ? 'active' : ''} 
-                  onClick={() => setRentalType('paddle')}>
-                  🏄 Paddle Surf
-                </button>
-              </div>
-            </div>
-          )}
+
 
           {type === 'pago' && (
             <div>
